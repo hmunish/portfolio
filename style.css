@@ -92,8 +92,9 @@
     justify-content: space-between;
   }
 
-  .banner_social_icons_wrapper > li{
+  .banner_social_icons_wrapper > li {
     list-style: none;
   }
+
   /* Banner Section ends here */
 }
