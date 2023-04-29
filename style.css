@@ -8,7 +8,7 @@
     font-family: 'Poppins', sans-serif;
   }
 
-  body{
+  body {
     background-color: #e5e5e5;
   }
 
@@ -54,7 +54,7 @@
   .banner {
     width: 100%;
     min-height: 604px;
-    background: #ffffff url(images/header-bg-mobile.png);
+    background: #fff url(images/header-bg-mobile.png);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -226,7 +226,7 @@
     justify-items: center;
     gap: 48px 0;
     border-top-right-radius: 100px;
-    background-color: #ffffff;
+    background-color: #fff;
   }
 
   .about_content_wrapper {
@@ -282,7 +282,7 @@
     min-height: 464px;
   }
 
-  .skills_wrapper_header{
+  .skills_wrapper_header {
     width: 100%;
     height: 72px;
     display: flex;
@@ -315,11 +315,11 @@
     cursor: pointer;
   }
 
-  .dropdown_arrow.close_icon{
+  .dropdown_arrow.close_icon {
     transform: rotateZ(-90deg);
   }
 
-  ul.skills_list{
+  ul.skills_list {
     width: 93%;
     height: 248px;
     margin: auto;
@@ -328,13 +328,13 @@
     justify-content: space-around;
   }
 
-  li.skills_list{
+  li.skills_list {
     width: 100%;
     min-height: 67px;
     list-style: none;
     display: flex;
     align-items: center;
-    background: #F7F7F9;
+    background: #f7f7f9;
     border-radius: 8px;
   }
 
