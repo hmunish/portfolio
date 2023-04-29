@@ -210,4 +210,72 @@
   }
 
   /* Works Section Ends Here */
+
+  /* About Section Starts Here */
+
+  section.about {
+    width: 100%;
+    min-height: 1062px;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    gap: 48px 0;
+    background-color: yellowgreen;
+  }
+
+  .about_content_wrapper {
+    width: 87%;
+    min-height: 346px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #6070ff;
+  }
+
+  h3.about_content {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+  }
+
+  p.about_content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .about_social_box {
+    width: 200px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .about_social_box > ul {
+    align-self: flex-end;
+  }
+
+  button.resume_button {
+    width: 162px;
+    height: 48px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #396df2;
+  }
+
+  .skills_wrapper {
+    width: 87%;
+    min-height: 464px;
+    background-color: burlywood;
+  }
+
+  /* About Section Ends Here */
 }
