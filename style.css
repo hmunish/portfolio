@@ -220,7 +220,6 @@
     align-content: center;
     justify-items: center;
     gap: 48px 0;
-    background-color: yellowgreen;
   }
 
   .about_content_wrapper {
@@ -229,7 +228,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #6070ff;
   }
 
   h3.about_content {
@@ -271,11 +269,79 @@
     color: #396df2;
   }
 
+  /* skills sub-section starts here */
   .skills_wrapper {
     width: 87%;
     min-height: 464px;
-    background-color: burlywood;
   }
 
+  .dropdown_wrapper {
+    width: 100%;
+  }
+
+  .dropdown_arrow_wrapper {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .dropdown_title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    flex-basis: 72%;
+  }
+
+  .dropdown_arrow {
+    width: 12px;
+    height: 6px;
+    cursor: pointer;
+  }
+
+  .dropdown_content_wrapper.open {
+    width: 100%;
+    min-height: 248px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .dropdown_content_wrapper.close {
+    display: none;
+  }
+
+  .dropdown_content {
+    width: 93%;
+    height: 67px;
+    background: #f7f7f9;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  img.skills {
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+
+  p.skills {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #253858;
+  }
+
+  /* skills sub-section ends here */
+
   /* About Section Ends Here */
+
+  button:hover {
+    background-color: #396df2;
+    color: #fff;
+    cursor: pointer;
+  }
 }
