@@ -8,6 +8,10 @@
     font-family: 'Poppins', sans-serif;
   }
 
+  body{
+    background-color: #e5e5e5;
+  }
+
   a {
     text-decoration: none;
   }
@@ -19,6 +23,7 @@
   .header_navbar {
     width: 100%;
     height: 48px;
+    background-color: #fff;
   }
 
   .navbar {
@@ -49,7 +54,7 @@
   .banner {
     width: 100%;
     min-height: 604px;
-    background-image: url(images/header-bg-mobile.png);
+    background: #ffffff url(images/header-bg-mobile.png);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -220,6 +225,8 @@
     align-content: center;
     justify-items: center;
     gap: 48px 0;
+    border-top-right-radius: 100px;
+    background-color: #ffffff;
   }
 
   .about_content_wrapper {
@@ -275,6 +282,15 @@
     min-height: 464px;
   }
 
+  .skills_wrapper_header{
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
   .dropdown_wrapper {
     width: 100%;
   }
@@ -299,36 +315,38 @@
     cursor: pointer;
   }
 
-  .dropdown_content_wrapper.open {
-    width: 100%;
-    min-height: 248px;
+  .dropdown_arrow.close_icon{
+    transform: rotateZ(-90deg);
+  }
+
+  ul.skills_list{
+    width: 93%;
+    height: 248px;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
   }
 
-  .dropdown_content_wrapper.close {
-    display: none;
-  }
-
-  .dropdown_content {
-    width: 93%;
-    height: 67px;
-    background: #f7f7f9;
-    border-radius: 8px;
+  li.skills_list{
+    width: 100%;
+    min-height: 67px;
+    list-style: none;
     display: flex;
     align-items: center;
+    background: #F7F7F9;
+    border-radius: 8px;
   }
 
-  img.skills {
+  .skills_img {
     width: 48px;
     height: 48px;
     margin-right: 16px;
+    margin-left: 12px;
     cursor: pointer;
   }
 
-  p.skills {
+  .skills_title {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
