@@ -1,201 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a portfolio website for Munish Halai">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a portfolio website for Munish Halai"
+    />
     <title>Munish Halai's Portfolio</title>
     <!-- Links -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Website main section starts here -->
     <main>
+      <!-- Navbar Starts here -->
 
-        <!-- Navbar Starts here -->
+      <header class="header_navbar">
+        <nav class="navbar">
+          <a href="index.html" class="logo">My Logo</a>
+          <img src="images/nav.png" alt="Navbar" class="nav_icon" />
+        </nav>
+      </header>
 
-        <header class="header_navbar">
-            <nav class="navbar">
-                <a href="index.html" class="logo">My Logo</a>
-                <img src="images/nav.png" alt="Navbar" class="nav_icon">
-            </nav>
-        </header>
-        
-        <!-- Navbar Ends here -->
+      <!-- Navbar Ends here -->
 
-        <!-- Header Banner Starts Here -->
+      <!-- Header Banner Starts Here -->
 
-        <section class="banner">
-            <div class="banner_content_wrapper">
-                <h1 class="banner_content">I’m Munish. <br>Glad to see you!</h1>
-                <p class="banner_content">I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
-                <p class="lets_connect">LET’S CONNECT</p>
-                <ul class="banner_social_icons_wrapper">
-                    <li><a href="index.html"><img class="banner_social_icons" src="images/twitter-icon.svg" alt="Twitter"></a></li>
-                    <li><a href="index.html"><img class="banner_social_icons" src="images/linkedin-icon.svg" alt="Linkedin"></a></li>
-                    <li><a href="index.html"><img class="banner_social_icons" src="images/social-icon-3.svg" alt="Social"></a></li>
-                    <li><a href="index.html"><img class="banner_social_icons" src="images/social-icon-4.svg" alt="Social"></a></li>
-                    <li><a href="index.html"><img class="banner_social_icons" src="images/social-icon-5.svg" alt="Social"></a></li>
-                </ul>
+      <section class="banner">
+        <div class="banner_content_wrapper">
+          <h1 class="banner_content">I’m Munish. <br />Glad to see you!</h1>
+          <p class="banner_content">
+            I’m a software developer! I can help you build a product , feature
+            or website Look through some of my work and experience! If you like
+            what you see and have a project you need coded, don’t hesitate to
+            contact me.
+          </p>
+          <p class="lets_connect">LET’S CONNECT</p>
+          <ul class="banner_social_icons_wrapper">
+            <li>
+              <a href="index.html"
+                ><img
+                  class="banner_social_icons"
+                  src="images/twitter-icon.svg"
+                  alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="index.html"
+                ><img
+                  class="banner_social_icons"
+                  src="images/linkedin-icon.svg"
+                  alt="Linkedin"
+              /></a>
+            </li>
+            <li>
+              <a href="index.html"
+                ><img
+                  class="banner_social_icons"
+                  src="images/social-icon-3.svg"
+                  alt="Social"
+              /></a>
+            </li>
+            <li>
+              <a href="index.html"
+                ><img
+                  class="banner_social_icons"
+                  src="images/social-icon-4.svg"
+                  alt="Social"
+              /></a>
+            </li>
+            <li>
+              <a href="index.html"
+                ><img
+                  class="banner_social_icons"
+                  src="images/social-icon-5.svg"
+                  alt="Social"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Header Banner Ends Here -->
+
+      <!-- Works Section Starts Here -->
+
+      <section class="works">
+        <div class="work_card">
+          <div class="work_card_wrapper">
+            <img src="images/work-1.png" alt="Work 1" class="work_img" />
+            <div class="work_card_content_wrapper">
+              <h3 class="work_title">Tonic</h3>
+              <ul class="work_tags">
+                <li class="work_tags main_tag">Canopy</li>
+                <li class="work_tags">Back End Dev</li>
+                <li class="work_tags">2015</li>
+              </ul>
+              <p class="work_description">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required.
+              </p>
+              <!-- Floats used! -->
+              <ul class="work_tech_stack">
+                <li class="work_tech_stack">HTML</li>
+                <li class="work_tech_stack">CSS</li>
+                <li class="work_tech_stack">JavaScript</li>
+              </ul>
+              <a href="index.html" class="work_link">
+                <button class="work_button">See project</button>
+              </a>
             </div>
-        </section>
-        
-        <!-- Header Banner Ends Here -->
-
-        <!-- Works Section Starts Here -->
-
-        <section class="works">
-            <div class="work_card">
-                <div class="work_card_wrapper">
-                    <img src="images/work-1.png" alt="Work 1" class="work_img">
-                    <div class="work_card_content_wrapper">
-                        <h3 class="work_title">Tonic</h3>
-                        <ul class="work_tags">
-                            <li class="work_tags main_tag">Canopy</li>
-                            <li class="work_tags">Back End Dev</li>
-                            <li class="work_tags">2015</li>
-                        </ul>
-                        <p class="work_description">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-                        <ul class="work_tech_stack">
-                            <li class="work_tech_stack">HTML</li>
-                            <li class="work_tech_stack">CSS</li>
-                            <li class="work_tech_stack">JavaScript</li>
-                        </ul>
-                        <a href="index.html" class="work_link">
-                            <button class="work_button">See project</button>
-                        </a>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="work_card">
+          <div class="work_card_wrapper">
+            <img src="images/work-2.png" alt="Work 1" class="work_img" />
+            <div class="work_card_content_wrapper">
+              <h3 class="work_title">Multi-Post Stories</h3>
+              <ul class="work_tags">
+                <li class="work_tags main_tag">Canopy</li>
+                <li class="work_tags">Back End Dev</li>
+                <li class="work_tags">2015</li>
+              </ul>
+              <p class="work_description">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required.
+              </p>
+              <!-- Floats used! -->
+              <ul class="work_tech_stack">
+                <li class="work_tech_stack">HTML</li>
+                <li class="work_tech_stack">CSS</li>
+                <li class="work_tech_stack">JavaScript</li>
+              </ul>
+              <a href="index.html" class="work_link">
+                <button class="work_button">See project</button>
+              </a>
             </div>
-            <div class="work_card">
-                <div class="work_card_wrapper">
-                    <img src="images/work-2.png" alt="Work 1" class="work_img">
-                    <div class="work_card_content_wrapper">
-                        <h3 class="work_title">Multi-Post Stories</h3>
-                        <ul class="work_tags">
-                            <li class="work_tags main_tag">Canopy</li>
-                            <li class="work_tags">Back End Dev</li>
-                            <li class="work_tags">2015</li>
-                        </ul>
-                        <p class="work_description">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-                        <ul class="work_tech_stack">
-                            <li class="work_tech_stack">HTML</li>
-                            <li class="work_tech_stack">CSS</li>
-                            <li class="work_tech_stack">JavaScript</li>
-                        </ul>
-                        <a href="index.html" class="work_link">
-                            <button class="work_button">See project</button>
-                        </a>
-                    </div>
-                </div>
-            </div> 
-            <div class="work_card">
-                <div class="work_card_wrapper">
-                    <img src="images/work-3.png" alt="Work 3" class="work_img">
-                    <div class="work_card_content_wrapper">
-                        <h3 class="work_title">Tonic</h3>
-                        <ul class="work_tags">
-                            <li class="work_tags main_tag">Canopy</li>
-                            <li class="work_tags">Back End Dev</li>
-                            <li class="work_tags">2015</li>
-                        </ul>
-                        <p class="work_description">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-                        <ul class="work_tech_stack">
-                            <li class="work_tech_stack">HTML</li>
-                            <li class="work_tech_stack">CSS</li>
-                            <li class="work_tech_stack">JavaScript</li>
-                        </ul>
-                        <a href="index.html" class="work_link">
-                            <button class="work_button">See project</button>
-                        </a>
-                    </div>
-                </div>
-            </div> 
-            <div class="work_card">
-                <div class="work_card_wrapper">
-                    <img src="images/work-4.png" alt="Work 1" class="work_img">
-                    <div class="work_card_content_wrapper">
-                        <h3 class="work_title">Multi-Post Stories</h3>
-                        <ul class="work_tags">
-                            <li class="work_tags main_tag">Canopy</li>
-                            <li class="work_tags">Back End Dev</li>
-                            <li class="work_tags">2015</li>
-                        </ul>
-                        <p class="work_description">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-                        <ul class="work_tech_stack">
-                            <li class="work_tech_stack">HTML</li>
-                            <li class="work_tech_stack">CSS</li>
-                            <li class="work_tech_stack">JavaScript</li>
-                        </ul>
-                        <a href="index.html" class="work_link">
-                            <button class="work_button">See project</button>
-                        </a>
-                    </div>
-                </div>
-            </div>  
-        </section>
-
-        <!-- Works Section Ends Here -->
-
-        <!-- About Section Starts Here -->
-
-        <section class="about">
-            <div class="about_content_wrapper">
-                <h3 class="about_content">About Myself</h3>
-                <p class="about_content">Hello I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
-                <div class="about_social_box">
-                    <p class="lets_connect">LET'S CONNECT</p>
-                    <ul class="banner_social_icons_wrapper">
-                        <li><a href="index.html"><img class="banner_social_icons" src="images/twitter-icon.svg" alt="Twitter"></a></li>
-                        <li><a href="index.html"><img class="banner_social_icons" src="images/linkedin-icon.svg" alt="Linkedin"></a></li>
-                        <li><a href="index.html"><img class="banner_social_icons" src="images/social-icon-3.svg" alt="Social"></a></li>
-                        <li><a href="index.html"><img class="banner_social_icons" src="images/social-icon-4.svg" alt="Social"></a></li>
-                        <li><a href="index.html"><img class="banner_social_icons" src="images/social-icon-5.svg" alt="Social"></a></li>
-                    </ul>
-                </div>
-                <a href="index.html" class="resume_button"><button class="resume_button">Get my resume</button></a>
+          </div>
+        </div>
+        <div class="work_card">
+          <div class="work_card_wrapper">
+            <img src="images/work-3.png" alt="Work 3" class="work_img" />
+            <div class="work_card_content_wrapper">
+              <h3 class="work_title">Tonic</h3>
+              <ul class="work_tags">
+                <li class="work_tags main_tag">Canopy</li>
+                <li class="work_tags">Back End Dev</li>
+                <li class="work_tags">2015</li>
+              </ul>
+              <p class="work_description">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required.
+              </p>
+              <!-- Floats used! -->
+              <ul class="work_tech_stack">
+                <li class="work_tech_stack">HTML</li>
+                <li class="work_tech_stack">CSS</li>
+                <li class="work_tech_stack">JavaScript</li>
+              </ul>
+              <a href="index.html" class="work_link">
+                <button class="work_button">See project</button>
+              </a>
             </div>
-            <ul class="skills_wrapper">
-                <li class="skills_wrapper_header">
-                    <h4 class="dropdown_title">Languages</h4>
-                    <img src="images/down_arrow.png" alt="Down Arrow" class="dropdown_arrow">
-                </li>
+          </div>
+        </div>
+        <div class="work_card">
+          <div class="work_card_wrapper">
+            <img src="images/work-4.png" alt="Work 1" class="work_img" />
+            <div class="work_card_content_wrapper">
+              <h3 class="work_title">Multi-Post Stories</h3>
+              <ul class="work_tags">
+                <li class="work_tags main_tag">Canopy</li>
+                <li class="work_tags">Back End Dev</li>
+                <li class="work_tags">2015</li>
+              </ul>
+              <p class="work_description">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required.
+              </p>
+              <!-- Floats used! -->
+              <ul class="work_tech_stack">
+                <li class="work_tech_stack">HTML</li>
+                <li class="work_tech_stack">CSS</li>
+                <li class="work_tech_stack">JavaScript</li>
+              </ul>
+              <a href="index.html" class="work_link">
+                <button class="work_button">See project</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <!-- Dropdown Content Starts Here -->
-                <ul class="skills_list">
-                    <li class="skills_list">
-                        <img src="images/javascript-icon.png" alt="JavaScript" class="skills_img">
-                        <h5 class="skills_title">Languages</h5>
-                    </li>
-                    <li class="skills_list">
-                        <img src="images/html-icon.png" alt="JavaScript" class="skills_img">
-                        <h5 class="skills_title">HTML</h5>
-                    </li>
-                    <li class="skills_list">
-                        <img src="images/css-icon.png" alt="JavaScript" class="skills_img">
-                        <h5 class="skills_title">CSS</h5>
-                    </li>
-                </ul>
-                <!-- Dropdown Content Ends Here -->
-                
-                <li class="skills_wrapper_header">
-                    <h4 class="dropdown_title">Frameworks</h4>
-                    <img src="images/down_arrow.png" alt="Down Arrow" class="dropdown_arrow close_icon">
-                </li>
-                <li class="skills_wrapper_header">
-                    <h4 class="dropdown_title">Skills</h4>
-                    <img src="images/down_arrow.png" alt="Down Arrow" class="dropdown_arrow close_icon">
-                </li>
+      <!-- Works Section Ends Here -->
+
+      <!-- About Section Starts Here -->
+
+      <section class="about">
+        <div class="about_content_wrapper">
+          <h3 class="about_content">About Myself</h3>
+          <p class="about_content">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website. Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hesitate to contact me.
+          </p>
+          <div class="about_social_box">
+            <p class="lets_connect">LET'S CONNECT</p>
+            <ul class="banner_social_icons_wrapper">
+              <li>
+                <a href="index.html"
+                  ><img
+                    class="banner_social_icons"
+                    src="images/twitter-icon.svg"
+                    alt="Twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="index.html"
+                  ><img
+                    class="banner_social_icons"
+                    src="images/linkedin-icon.svg"
+                    alt="Linkedin"
+                /></a>
+              </li>
+              <li>
+                <a href="index.html"
+                  ><img
+                    class="banner_social_icons"
+                    src="images/social-icon-3.svg"
+                    alt="Social"
+                /></a>
+              </li>
+              <li>
+                <a href="index.html"
+                  ><img
+                    class="banner_social_icons"
+                    src="images/social-icon-4.svg"
+                    alt="Social"
+                /></a>
+              </li>
+              <li>
+                <a href="index.html"
+                  ><img
+                    class="banner_social_icons"
+                    src="images/social-icon-5.svg"
+                    alt="Social"
+                /></a>
+              </li>
             </ul>
-        </section>
-        <!-- About Section Ends Here -->
-    
+          </div>
+          <a href="index.html" class="resume_button"
+            ><button class="resume_button">Get my resume</button></a
+          >
+        </div>
+        <ul class="skills_wrapper">
+          <li class="skills_wrapper_header">
+            <h4 class="dropdown_title">Languages</h4>
+            <img
+              src="images/down_arrow.png"
+              alt="Down Arrow"
+              class="dropdown_arrow"
+            />
+          </li>
+
+          <!-- Dropdown Content Starts Here -->
+          <ul class="skills_list">
+            <li class="skills_list">
+              <img
+                src="images/javascript-icon.png"
+                alt="JavaScript"
+                class="skills_img"
+              />
+              <h5 class="skills_title">Languages</h5>
+            </li>
+            <li class="skills_list">
+              <img
+                src="images/html-icon.png"
+                alt="JavaScript"
+                class="skills_img"
+              />
+              <h5 class="skills_title">HTML</h5>
+            </li>
+            <li class="skills_list">
+              <img
+                src="images/css-icon.png"
+                alt="JavaScript"
+                class="skills_img"
+              />
+              <h5 class="skills_title">CSS</h5>
+            </li>
+          </ul>
+          <!-- Dropdown Content Ends Here -->
+
+          <li class="skills_wrapper_header">
+            <h4 class="dropdown_title">Frameworks</h4>
+            <img
+              src="images/down_arrow.png"
+              alt="Down Arrow"
+              class="dropdown_arrow close_icon"
+            />
+          </li>
+          <li class="skills_wrapper_header">
+            <h4 class="dropdown_title">Skills</h4>
+            <img
+              src="images/down_arrow.png"
+              alt="Down Arrow"
+              class="dropdown_arrow close_icon"
+            />
+          </li>
+        </ul>
+      </section>
+      <!-- About Section Ends Here -->
     </main>
     <!-- Website main section ends here -->
-</body>
+  </body>
 </html>
