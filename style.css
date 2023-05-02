@@ -358,33 +358,27 @@
   /* About Section Ends Here */
 
   /* Contact Section Starts Here */
-  
-  section.contact{
+
+  section.contact {
     padding-top: 50px;
     background-color: #fff;
   }
 
-  .contact_wrap{
+  .contact_wrap {
     width: 100%;
     min-height: 779px;
-    background: #7f8cff;
+    background: #6070ff url(images/contact-section-bg.png);
     background-size: contain;
+    background-position-x: right;
+    background-position-y: 21px;
     background-repeat: no-repeat;
     border-top-left-radius: 100px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    position: relative;
+    align-items: flex-end;
   }
 
-  .contact_wrap img {
-    position: absolute;
-    top: 50;
-    right: 0;
-  }
-
-  .contact_content_wrap{
+  .contact_content_wrap {
     width: 87%;
     min-height: 630px;
     display: flex;
@@ -393,25 +387,25 @@
     margin-bottom: 45px;
   }
 
-  .contact_content{
+  .contact_content {
     text-align: center;
   }
 
-  h3.contact_content{
+  h3.contact_content {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-    color: #ffffff;
+    color: #fff;
   }
 
-  p.contact_content{
+  p.contact_content {
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
     color: #ebebff;
   }
 
-  .contact_form{
+  .contact_form {
     width: 100%;
     min-height: 374px;
     display: flex;
@@ -419,7 +413,7 @@
     justify-content: space-between;
   }
 
-  .form_input{
+  .form_input {
     width: 100%;
     min-height: 48px;
     font-weight: 400;
@@ -427,31 +421,29 @@
     line-height: 20px;
     color: #172b4d;
     padding-left: 16px;
-    background: #ffffff;
-    border: 1px solid #CFD8DC;
+    background: #fff;
+    border: 1px solid #cfd8dc;
     border-radius: 8px;
   }
 
-  .form_input.textarea{
+  .form_input.textarea {
     height: 170px;
     padding-top: 15px;
     font-size: 15px;
     line-height: 24px;
-    color: #B3BAC5;
+    color: #b3bac5;
   }
 
-  button.form_input{
+  button.form_input {
     width: 142px;
     padding: 0;
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #6070FF;
+    color: #6070ff;
   }
 
-
-  
   /* Contact Section Ends Here */
 
   button:hover {
