@@ -659,11 +659,11 @@
 
   /* Contact Section Starts Here */
 
-  section.contact{
+  section.contact {
     padding: 0;
   }
 
-  .contact_wrap{
+  .contact_wrap {
     min-height: 846px;
     align-items: center;
     background-image: url(images/desktop-contact-bg.svg);
@@ -671,22 +671,23 @@
     background-position: right 80px;
   }
 
-  .contact_content_wrap{
+  .contact_content_wrap {
     width: 569px;
     min-height: 577px;
   }
 
-  .contact_form{
+  .contact_form {
     align-items: center;
   }
 
-  .form_input{
+  .form_input {
     border-radius: 2px;
   }
 
-  button.form_input{
+  button.form_input {
     border-radius: 8px;
   }
+
   /* Contact Section Ends Here */
 }
 
