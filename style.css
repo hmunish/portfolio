@@ -656,6 +656,38 @@
   }
 
   /* About Section Ends Here */
+
+  /* Contact Section Starts Here */
+
+  section.contact{
+    padding: 0;
+  }
+
+  .contact_wrap{
+    min-height: 846px;
+    align-items: center;
+    background-image: url(images/desktop-contact-bg.svg);
+    background-size: contain;
+    background-position: right 80px;
+  }
+
+  .contact_content_wrap{
+    width: 569px;
+    min-height: 577px;
+  }
+
+  .contact_form{
+    align-items: center;
+  }
+
+  .form_input{
+    border-radius: 2px;
+  }
+
+  button.form_input{
+    border-radius: 8px;
+  }
+  /* Contact Section Ends Here */
 }
 
 /* Desktop Version Ends Here */
