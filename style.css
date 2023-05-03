@@ -1,3 +1,6 @@
+
+/* Mobile Version Starts Here */
+
 @media (min-width: 375px) {
   /* Global Styles Starts Here */
 
@@ -14,6 +17,12 @@
 
   a {
     text-decoration: none;
+  }
+
+  button:hover {
+    background-color: #396df2;
+    color: #fff;
+    cursor: pointer;
   }
 
   /* Global Styles Ends Here */
@@ -45,6 +54,10 @@
   .nav_icon {
     height: 12px;
     cursor: pointer;
+  }
+
+  .desktop_nav{
+    display: none;
   }
 
   /* Navbar ends here */
@@ -445,10 +458,41 @@
   }
 
   /* Contact Section Ends Here */
+}
 
-  button:hover {
-    background-color: #396df2;
-    color: #fff;
-    cursor: pointer;
+/* Mobile Version Ends Here */
+
+
+/* Desktop Version Starts Here */
+
+@media (min-width: 768px) {
+  
+  .header_navbar{
+      height: 72px;
+  }
+
+  .navbar{
+      width: 74%;
+  }
+
+  .nav_icon{
+    display: none;
+  }
+
+  ul.desktop_nav{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  li.desktop_nav_links{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #344563;
   }
 }
+
+/* Desktop Version Ends Here */
