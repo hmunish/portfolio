@@ -56,7 +56,7 @@
     cursor: pointer;
   }
 
-  .desktop_nav{
+  .desktop_nav {
     display: none;
   }
 
@@ -462,37 +462,69 @@
 
 /* Mobile Version Ends Here */
 
-
 /* Desktop Version Starts Here */
 
 @media (min-width: 768px) {
-  
-  .header_navbar{
-      height: 72px;
+  /* Navbar starts here */
+
+  .header_navbar {
+    height: 72px;
   }
 
-  .navbar{
-      width: 74%;
+  .navbar {
+    width: 74%;
   }
 
-  .nav_icon{
+  .nav_icon {
     display: none;
   }
 
-  ul.desktop_nav{
+  ul.desktop_nav {
     width: 250px;
     display: flex;
     justify-content: space-between;
     list-style: none;
   }
 
-  li.desktop_nav_links{
+  li.desktop_nav_links {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
     text-align: center;
     color: #344563;
   }
+
+  /* Navbar ends here */
+
+  /* Banner Starts Here */
+
+  section.banner {
+    min-height: 844px;
+    background-image: url(images/desktop-header-bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right 46px;
+    border-bottom-left-radius: 100px;
+  }
+
+  .banner_content_wrapper {
+    width: 64%;
+    min-height: 302px;
+  }
+
+  h1.banner_content {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+    color: #091e42;
+  }
+
+  p.banner_content {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  /* Banner Ends Here */
 }
 
 /* Desktop Version Ends Here */
