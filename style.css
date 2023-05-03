@@ -19,12 +19,6 @@
     text-decoration: none;
   }
 
-  button:hover {
-    background-color: #396df2;
-    color: #fff;
-    cursor: pointer;
-  }
-
   /* Global Styles Ends Here */
 
   /* Navbar starts here */
@@ -616,6 +610,62 @@
   }
 
   /* Work Section Ends Here */
+
+  /* About Section Starts Here */
+
+  section.about {
+    min-height: 668px;
+    grid-template-columns: 31% 48%;
+    justify-content: space-evenly;
+  }
+
+  .about_content_wrapper,
+  .skills_wrapper {
+    width: 100%;
+  }
+
+  .about_content_wrapper {
+    max-height: 311px;
+    min-height: 311px;
+  }
+
+  .skills_wrapper {
+    min-height: 336px;
+    max-height: 336px;
+  }
+
+  h3.about_content {
+    color: #091e42;
+  }
+
+  ul.skills_list {
+    height: auto;
+    flex-direction: row;
+  }
+
+  li.skills_list {
+    width: 122px;
+    height: 120px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  h5.skills_title {
+    margin-left: 12px;
+  }
+
+  /* About Section Ends Here */
 }
 
 /* Desktop Version Ends Here */
+
+/* Global Styles Starts Here */
+
+button:hover {
+  background-color: #396df2;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Global Styles Ends Here */
