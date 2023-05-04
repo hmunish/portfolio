@@ -414,6 +414,11 @@
     font-size: 20px;
     line-height: 28px;
     color: #ebebff;
+    transition: all 2s;
+  }
+
+  p.contact_content:hover{
+    transform: translateX(10px);
   }
 
   .contact_form {
@@ -559,6 +564,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    transition: all 2s;
+  }
+
+  .work_img_wrapper:hover{
+    transform: scale(1.1);
   }
 
   .work_img_wrapper.work_1 {
