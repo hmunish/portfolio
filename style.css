@@ -1,3 +1,6 @@
+
+/* Mobile Version Starts Here */
+
 @media (min-width: 375px) {
   /* Global Styles Starts Here */
 
@@ -47,6 +50,10 @@
     cursor: pointer;
   }
 
+  .desktop_nav {
+    display: none;
+  }
+
   /* Navbar ends here */
 
   /* Banner Section starts here */
@@ -59,6 +66,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom-left-radius: 100px;
   }
 
   .banner_content_wrapper {
@@ -212,6 +220,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: #396df2;
+    background: none;
   }
 
   /* Works Section Ends Here */
@@ -259,10 +268,6 @@
     justify-content: space-around;
   }
 
-  .about_social_box > ul {
-    align-self: flex-end;
-  }
-
   button.resume_button {
     width: 162px;
     height: 48px;
@@ -274,6 +279,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: #396df2;
+    background: none;
   }
 
   /* skills sub-section starts here */
@@ -289,6 +295,11 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    border-bottom: 1px solid #dfe1e6;
+  }
+
+  .skills_wrapper_header:nth-child(1) {
+    border-bottom: none;
   }
 
   .dropdown_wrapper {
@@ -445,10 +456,252 @@
   }
 
   /* Contact Section Ends Here */
-
-  button:hover {
-    background-color: #396df2;
-    color: #fff;
-    cursor: pointer;
-  }
 }
+
+/* Mobile Version Ends Here */
+
+/* Desktop Version Starts Here */
+
+@media (min-width: 768px) {
+  /* Navbar starts here */
+
+  .header_navbar {
+    height: 72px;
+  }
+
+  .navbar {
+    width: 74%;
+  }
+
+  .nav_icon {
+    display: none;
+  }
+
+  ul.desktop_nav {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  li.desktop_nav_links {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #344563;
+  }
+
+  /* Navbar ends here */
+
+  /* Banner Starts Here */
+
+  section.banner {
+    min-height: 844px;
+    background-image: url(images/desktop-header-bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right 46px;
+  }
+
+  .banner_content_wrapper {
+    width: 64%;
+    min-height: 302px;
+  }
+
+  h1.banner_content {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+    color: #091e42;
+  }
+
+  p.banner_content {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  /* Banner Ends Here */
+
+  /* Work Section Starts Here */
+
+  section.works {
+    width: 80%;
+    min-height: 2694px;
+    gap: 0;
+    align-content: space-evenly;
+    margin: auto;
+  }
+
+  .work_card {
+    width: 100%;
+    min-height: 496px;
+  }
+
+  .work_card_wrapper {
+    width: 94%;
+    min-height: 448px;
+    flex-direction: row;
+  }
+
+  .work_card_wrapper.work_2,
+  .work_card_wrapper.work_4 {
+    flex-direction: row-reverse;
+  }
+
+  .work_img {
+    display: none;
+  }
+
+  .work_img_wrapper {
+    width: 50%;
+    min-height: 448px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .work_img_wrapper.work_1 {
+    background-image: url(images/desktop-work-1.png);
+  }
+
+  .work_img_wrapper.work_2 {
+    background-image: url(images/desktop-work-2.png);
+  }
+
+  .work_img_wrapper.work_3 {
+    background-image: url(images/desktop-work-3.png);
+  }
+
+  .work_img_wrapper.work_4 {
+    background-image: url(images/desktop-work-4.png);
+  }
+
+  .work_card_content_wrapper {
+    width: 46%;
+    min-height: 312px;
+  }
+
+  .work_title {
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  ul.work_tags {
+    width: 297px;
+    height: 24px;
+  }
+
+  .work_tags.main_tag {
+    font-weight: 500;
+  }
+
+  li.work_tags {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  .work_description {
+    font-size: 16px;
+  }
+
+  li.work_tech_stack {
+    text-transform: lowercase;
+  }
+
+  /* Work Section Ends Here */
+
+  /* About Section Starts Here */
+
+  section.about {
+    min-height: 668px;
+    grid-template-columns: 31% 48%;
+    justify-content: space-evenly;
+  }
+
+  .about_content_wrapper,
+  .skills_wrapper {
+    width: 100%;
+  }
+
+  .about_content_wrapper {
+    height: 311px;
+    min-height: 311px;
+  }
+
+  .skills_wrapper {
+    height: 336px;
+    min-height: 336px;
+  }
+
+  h3.about_content {
+    color: #091e42;
+  }
+
+  ul.skills_list {
+    height: auto;
+    flex-direction: row;
+  }
+
+  li.skills_list {
+    width: 122px;
+    height: 120px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  h5.skills_title {
+    margin-left: 12px;
+  }
+
+  /* About Section Ends Here */
+
+  /* Contact Section Starts Here */
+
+  section.contact {
+    padding: 0;
+  }
+
+  .contact_wrap {
+    min-height: 846px;
+    align-items: center;
+    background-image: url(images/desktop-contact-bg.svg);
+    background-size: contain;
+    background-position: right 80px;
+  }
+
+  .contact_content_wrap {
+    width: 569px;
+    min-height: 577px;
+  }
+
+  .contact_form {
+    align-items: center;
+  }
+
+  .form_input {
+    border-radius: 2px;
+  }
+
+  button.form_input {
+    border-radius: 8px;
+  }
+
+  /* Contact Section Ends Here */
+}
+
+/* Desktop Version Ends Here */
+
+/* Global Styles Starts Here */
+
+button:hover {
+  background-color: #396df2;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Global Styles Ends Here */
