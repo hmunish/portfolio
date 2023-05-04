@@ -66,6 +66,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom-left-radius: 100px;
   }
 
   .banner_content_wrapper {
@@ -501,7 +502,6 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right 46px;
-    border-bottom-left-radius: 100px;
   }
 
   .banner_content_wrapper {
