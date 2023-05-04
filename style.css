@@ -715,3 +715,12 @@ button:hover {
 }
 
 /* Global Styles Ends Here */
+
+.logo {
+  animation: rotate 2s;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotateX(360deg);
+  }
