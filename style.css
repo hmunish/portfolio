@@ -417,7 +417,7 @@
     transition: all 2s;
   }
 
-  p.contact_content:hover{
+  p.contact_content:hover {
     transform: translateX(10px);
   }
 
@@ -567,7 +567,7 @@
     transition: all 2s;
   }
 
-  .work_img_wrapper:hover{
+  .work_img_wrapper:hover {
     transform: scale(1.1);
   }
 
