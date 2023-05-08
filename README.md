@@ -39,6 +39,7 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -76,6 +77,16 @@ After you're finished please remove all the comments and instructions!
 - **[Mobile_First_Approach]**
 - **[CSS_Media_Queries]**
 - **[Flexbox]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+Checkout the live version of website here.
+
+- [Live Demo Link](https://hmunish.github.io/microverse-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -123,7 +134,6 @@ To run the project, execute the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-
 👤 **Author1**
 
 - GitHub: [@githubhandle](https://github.com/hmunish)
@@ -134,7 +144,6 @@ To run the project, execute the following command:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
 
 - [ ] **[Desktop_version]**
 - [ ] **[Responsive_navbar]**
