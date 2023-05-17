@@ -18,6 +18,14 @@
     text-decoration: none;
   }
 
+  .dp-none {
+    display: none;
+  }
+
+  .blur {
+    filter: blur(11px);
+  }
+
   /* Global Styles Ends Here */
 
   /* Navbar starts here */
@@ -61,10 +69,9 @@
     width: 100vw;
     height: 100vh;
     position: absolute;
-    background: #6070ff;
+    background: rgba(96, 112, 255, 0.9);
     mix-blend-mode: multiply;
     z-index: 5;
-    display: none;
   }
 
   .nav_close_icon {
