@@ -80,6 +80,7 @@
     float: right;
     margin-top: 19px;
     margin-right: 35px;
+    cursor: pointer;
   }
 
   nav.mobile_navbar {
