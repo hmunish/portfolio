@@ -14,3 +14,8 @@ function toggleMobileNav() {
 }
 navOpenIcon.addEventListener('click', toggleMobileNav, false);
 navCloseIcon.addEventListener('click', toggleMobileNav, false);
+mobileNav.addEventListener('click', (e)=>{
+  if(e.target.tagName == 'LI'){
+    toggleMobileNav();
+  };
+})
