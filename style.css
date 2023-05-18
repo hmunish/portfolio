@@ -1,4 +1,3 @@
-
 /* Mobile Version Starts Here */
 
 @media (min-width: 375px) {
@@ -8,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 
   body {
@@ -17,6 +16,18 @@
 
   a {
     text-decoration: none;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .dp-none {
+    display: none;
+  }
+
+  .blur {
+    filter: blur(11px);
   }
 
   /* Global Styles Ends Here */
@@ -55,6 +66,52 @@
   }
 
   /* Navbar ends here */
+
+  /* Mobile nav starts here */
+
+  .mobile_nav {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: rgba(96, 112, 255, 0.9);
+    mix-blend-mode: multiply;
+    z-index: 5;
+  }
+
+  .nav_close_icon {
+    width: 14px;
+    height: 14px;
+    float: right;
+    margin-top: 19px;
+    margin-right: 35px;
+    cursor: pointer;
+  }
+
+  nav.mobile_navbar {
+    width: 94%;
+    min-height: 184px;
+    margin: auto;
+    margin-top: 51px;
+  }
+
+  ul.mobile_navbar {
+    width: 95%;
+    min-height: 184px;
+    list-style: none;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  li.mobile_navbar {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+  }
+
+  /* Mobile nav ends here */
 
   /* Banner Section starts here */
 
@@ -498,6 +555,13 @@
   }
 
   /* Navbar ends here */
+
+  /* Mobile Navbar starts here */
+  .mobile_nav {
+    display: none;
+  }
+
+  /* Mobile Navbar ends here */
 
   /* Banner Starts Here */
 
