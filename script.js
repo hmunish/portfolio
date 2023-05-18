@@ -12,7 +12,5 @@ function toggleMobileNav() {
   header.classList.toggle('blur');
   banner.classList.toggle('blur');
 }
-
-// EVENT LISTNERS
 navOpenIcon.addEventListener('click', toggleMobileNav, false);
 navCloseIcon.addEventListener('click', toggleMobileNav, false);
