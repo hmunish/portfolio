@@ -6,6 +6,8 @@ const header = document.querySelector('.header_navbar');
 const banner = document.querySelector('.banner');
 const workSection = document.querySelector('#work_section');
 const modalWindow = document.querySelector('dialog');
+const contactForm = document.querySelector('.contact_form');
+const formErrorMsg = document.querySelector('.form_error_msg');
 const workData = [
   {
     id: 1,
@@ -57,8 +59,6 @@ const workData = [
     sourceUrl: 'index.html',
   },
 ];
-// FUNCTIONS
-
 // Adding work cards function
 
 function addWorkCards() {
@@ -148,6 +148,16 @@ function addModal(obj) {
   modalWindow.innerHTML = modalHtml;
 }
 
+// Form Validation Function
+
+function validateContactForm(e) {
+  if (e.target.email.value !== e.target.email.value.toLowerCase()) {
+    e.preventDefault();
+    formErrorMsg.style.display = 'block';
+    formErrorMsg.textContent = 'Error: please enter email in lower case.';
+  }
+}
+
 // EVENT LISTENERS
 
 // Adding work cards to work section from work data array
@@ -170,3 +180,4 @@ workSection.addEventListener('click', (e) => {
     });
   }
 });
+contactForm.addEventListener('submit', validateContactForm, false);
