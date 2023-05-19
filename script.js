@@ -58,8 +58,6 @@ const workData = [
     sourceUrl: 'index.html',
   },
 ];
-// FUNCTIONS
-
 // Adding work cards function
 
 function addWorkCards() {
