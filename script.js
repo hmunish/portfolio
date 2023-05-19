@@ -6,6 +6,7 @@ const header = document.querySelector('.header_navbar');
 const banner = document.querySelector('.banner');
 const workSection = document.querySelector('#work_section');
 const modalWindow = document.querySelector('dialog');
+const contactForm = document.querySelector('.contact_form');
 const workData = [
   {
     id: 1,
@@ -147,6 +148,8 @@ function addModal(obj) {
 
   modalWindow.innerHTML = modalHtml;
 }
+
+// Form Validation Function
 
 // EVENT LISTENERS
 
