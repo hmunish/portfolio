@@ -87,6 +87,7 @@ function addWorkCards() {
   });
 }
 
+
 // Toggling Nav Function
 function toggleMobileNav() {
   mobileNav.classList.toggle('dp-none');
@@ -94,6 +95,9 @@ function toggleMobileNav() {
   header.classList.toggle('blur');
   banner.classList.toggle('blur');
 }
+
+
+
 // EVENT LISTENERS
 
 // Adding work cards to work section from work data array
