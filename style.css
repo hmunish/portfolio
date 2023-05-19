@@ -252,6 +252,7 @@
     height: 24px;
     display: flex;
     justify-content: space-between;
+    gap: 5px;
   }
 
   li.work_tech_stack {
@@ -281,6 +282,91 @@
   }
 
   /* Works Section Ends Here */
+
+  /* Modal Starts Here */
+
+  .work_modal {
+    width: 92%;
+    height: 87vh;
+    position: fixed;
+    margin: auto;
+    margin-top: 30px;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+  }
+
+  .work_modal_wrapper {
+    width: 91%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* background-color: #396df2; */
+  }
+
+  .work_modal_head_wrapper {
+    width: 100%;
+    min-height: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* background-color: #7f8cff; */
+  }
+
+  .work_modal_title_wrapper {
+    width: 100%;
+    min-height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .modal_close_icon {
+    width: 12px;
+    height: 12px;
+    margin-right: 14px;
+    cursor: pointer;
+  }
+
+  .work_modal_bottom_wrapper {
+    width: 100%;
+    min-height: 349px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .work_modal_action_wrapper {
+    width: 100%;
+    min-height: 113px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .work_modal_buttons_wrapper {
+    width: 100%;
+    min-height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .work_modal_button {
+    width: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  /* Modal Ends Here */
 
   /* About Section Starts Here */
 
@@ -688,6 +774,55 @@
 
   /* Work Section Ends Here */
 
+  /* Work Modal Starts Here */
+
+  .work_modal {
+    width: 80%;
+    z-index: 25;
+  }
+
+  .work_modal_wrapper {
+    width: 96%;
+    height: 88%;
+  }
+
+  #modal_img_wrapper {
+    width: 100%;
+    min-height: 586px;
+    background-size: cover;
+    margin-top: 36px;
+    margin-bottom: 59px;
+  }
+
+  #modal_img_wrapper:hover {
+    transform: scale(1);
+  }
+
+  #modal_tech_stack {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .work_modal_bottom_wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #modal_description {
+    width: 70%;
+  }
+
+  .work_modal_action_wrapper {
+    width: 28%;
+    height: 157px;
+  }
+
+  .work_modal_button {
+    width: 141px;
+  }
+
+  /* Work Modal Ends Here */
+
   /* About Section Starts Here */
 
   section.about {
@@ -772,8 +907,12 @@
 
 /* Global Styles Starts Here */
 
+.work_modal {
+  display: none;
+}
+
 button:hover {
-  background-color: #396df2;
+  background-color: #184cce;
   color: #fff;
   cursor: pointer;
 }
