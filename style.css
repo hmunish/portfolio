@@ -911,6 +911,11 @@
   display: none;
 }
 
+.form_error_msg {
+  display: none;
+  color: red;
+}
+
 button:hover {
   background-color: #184cce;
   color: #fff;
