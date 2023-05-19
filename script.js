@@ -11,7 +11,8 @@ const workData = [
     id: 1,
     img: 'images/work-1.png',
     title: 'Tonic',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    modalDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     tags: ['Canopy', 'Back End Dev', 2015],
     technologies: ['HTML', 'CSS', 'JavaScript'],
     modalTechnologies: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
@@ -22,8 +23,9 @@ const workData = [
     id: 2,
     img: 'images/work-2.png',
     title: 'Multi-Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    tags: ['Canopy', 'Back End Dev', 2015],
+    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    modalDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    tags: ['Facebook', 'Back End Dev', 2015],
     technologies: ['HTML', 'CSS', 'JavaScript'],
     modalTechnologies: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
     liveUrl: 'index.html',
@@ -33,8 +35,9 @@ const workData = [
     id: 3,
     img: 'images/work-3.png',
     title: 'Tonic',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    tags: ['Canopy', 'Back End Dev', 2015],
+    description: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    modalDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    tags: ['Facebook', 'Back End Dev', 2015],
     technologies: ['HTML', 'CSS', 'JavaScript'],
     modalTechnologies: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
     liveUrl: 'index.html',
@@ -45,8 +48,9 @@ const workData = [
     id: 4,
     img: 'images/work-4.png',
     title: 'Multi-Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    tags: ['Canopy', 'Back End Dev', 2015],
+    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    modalDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    tags: ['Uber', 'Lead Developer', 2018],
     technologies: ['HTML', 'CSS', 'JavaScript'],
     modalTechnologies: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
     liveUrl: 'index.html',
@@ -123,7 +127,7 @@ function addModal(obj) {
             <img src="images/work-${obj.id}.png" alt="Work ${obj.id}" class="work_img"/>
             <div class="work_img_wrapper work_${obj.id}" id="modal_img_wrapper"></div>
             <div class="work_modal_bottom_wrapper">
-              <p class="work_description" id="modal_description">${obj.description}</p>
+              <p class="work_description" id="modal_description">${obj.modalDescription}</p>
               <div class="work_modal_action_wrapper">
                 <ul class="work_tech_stack" id="modal_tech_stack">
                   ${techStacks}
