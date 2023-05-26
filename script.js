@@ -18,7 +18,7 @@ const workData = [
     tags: ['Canopy', 'Back End Dev', 2015],
     technologies: ['HTML', 'CSS', 'JavaScript'],
     modalTechnologies: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
-    liveUrl: 'index.html',
+    liveUrl: 'index.html'
     sourceUrl: 'index.html',
   },
   {
