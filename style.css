@@ -722,19 +722,19 @@
   }
 
   .work_img_wrapper.work_1 {
-    background-image: url(images/desktop-work-1.png);
+    background-image: url(images/project-1.PNG);
   }
 
   .work_img_wrapper.work_2 {
-    background-image: url(images/desktop-work-2.png);
+    background-image: url(images/project-2.PNG);
   }
 
   .work_img_wrapper.work_3 {
-    background-image: url(images/desktop-work-3.png);
+    background-image: url(images/project-3.PNG);
   }
 
   .work_img_wrapper.work_4 {
-    background-image: url(images/desktop-work-4.png);
+    background-image: url(images/project-4.PNG);
   }
 
   .work_card_content_wrapper {
