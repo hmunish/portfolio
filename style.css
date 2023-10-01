@@ -737,6 +737,10 @@
     background-image: url(images/project-4.PNG);
   }
 
+  .work_img_wrapper.work_5 {
+    background-image: url(images/project-5.PNG);
+  }
+
   .work_card_content_wrapper {
     width: 46%;
     min-height: 312px;
