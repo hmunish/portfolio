@@ -30,7 +30,7 @@ const workData = [
       'Created a group chat application where users can login and send and receive messages.',
     modalDescription:
       'Created a group chat application where users can login and send and receive messages.',
-    tags: ['Back End Dev', 'AWS', 2023],
+    tags: ['Full Stack Dev', 'AWS', 2023],
     technologies: [
       'HTML & CSS',
       'JavaScript',
@@ -70,6 +70,27 @@ const workData = [
     technologies: ['HTML', 'CSS', 'JavaScript'],
     liveUrl: 'https://tictactoe-munish.netlify.app/',
     sourceUrl: 'https://github.com/hmunish/tic-tac-toe/',
+  },
+
+  {
+    id: 5,
+    img: 'images/project-5.PNG',
+    title: 'Expenses Tracker',
+    description:
+      'Created an expense tracker where a user can signup and login, add and remove expenses.',
+    modalDescription:
+      'Created an expense tracker where a user can signup and login, add and remove expenses.',
+    tags: ['Full Stack Dev', 'MVC', 2023],
+    technologies: [
+      'HTML & CSS',
+      'JavaScript',
+      'NodeJS',
+      'ExpressJS',
+      'MongoDB',
+      'Mongoose',
+    ],
+    liveUrl: 'https://expenses-tracker-010w.onrender.com/public/login.html',
+    sourceUrl: 'https://github.com/hmunish/expenses-tracker',
   },
 ];
 // Adding work cards function
