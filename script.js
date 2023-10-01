@@ -11,52 +11,65 @@ const formErrorMsg = document.querySelector('.form_error_msg');
 const workData = [
   {
     id: 1,
-    img: 'images/work-1.png',
-    title: 'Tonic',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    modalDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    tags: ['Canopy', 'Back End Dev', 2015],
+    img: 'images/project-1.PNG',
+    title: 'Mapty',
+    description:
+      "Mapty is an application to display workouts on the map & stores them on the browser's local storage for future reference. It's built using HTML5, CSS3, JavaScript & Leaflet library.",
+    modalDescription:
+      "Mapty is an application to display workouts on the map & stores them on the browser's local storage for future reference. It's built using HTML5, CSS3, JavaScript & Leaflet library.",
+    tags: ['Front End Dev', 'Leaflet', 2023],
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    modalTechnologies: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
-    liveUrl: 'index.html',
-    sourceUrl: 'index.html',
+    liveUrl: 'https://munish-mapty.netlify.app/',
+    sourceUrl: 'https://github.com/hmunish/mapty',
   },
   {
     id: 2,
-    img: 'images/work-2.png',
-    title: 'Multi-Post Stories',
-    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    modalDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    tags: ['Facebook', 'Back End Dev', 2015],
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    modalTechnologies: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
-    liveUrl: 'index.html',
-    sourceUrl: 'index.html',
+    img: 'images/project-2.PNG',
+    title: 'Multi Group Chat App',
+    description:
+      'Created a group chat application where users can login and send and receive messages.',
+    modalDescription:
+      'Created a group chat application where users can login and send and receive messages.',
+    tags: ['Back End Dev', 'AWS', 2023],
+    technologies: [
+      'HTML & CSS',
+      'JavaScript',
+      'NodeJS',
+      'ExpressJS',
+      'SQL',
+      'Sequelize',
+      'AWS',
+    ],
+    liveUrl:
+      'http://ec2-3-92-72-210.compute-1.amazonaws.com:3000/public/signup.html',
+    sourceUrl: 'https://github.com/hmunish/chat-app',
   },
   {
     id: 3,
-    img: 'images/work-3.png',
-    title: 'Tonic',
-    description: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    modalDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    tags: ['Facebook', 'Back End Dev', 2015],
+    img: 'images/project-3.PNG',
+    title: 'Forkify',
+    description:
+      'Forkify is a web application to search for more than 1,000,000 recipes with features to adjust ingredients according to the servings. Moreover, users can upload their custom recipes & bookmark recipes for future use.',
+    modalDescription:
+      'Forkify is a web application to search for more than 1,000,000 recipes with features to adjust ingredients according to the servings. Moreover, users can upload their custom recipes & bookmark recipes for future use.',
+    tags: ['Front End Dev', 'MVC', 2023],
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    modalTechnologies: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
-    liveUrl: 'index.html',
-    sourceUrl: 'index.html',
+    liveUrl: 'https://forkify-munish.netlify.app/',
+    sourceUrl: 'https://github.com/hmunish/forkify',
   },
 
   {
     id: 4,
-    img: 'images/work-4.png',
-    title: 'Multi-Post Stories',
-    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    modalDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    tags: ['Uber', 'Lead Developer', 2018],
+    img: 'images/project-4.PNG',
+    title: 'Tic Tac Toe',
+    description:
+      'Tic_Tac_Toe is a game which can be played against the computer or with any other human player. Player needs to draw a squence 3 X or 0 as per the turn in rows/columns/diagonally before the opponent. Each player takes turn alternatively until game is drawn.',
+    modalDescription:
+      'Tic_Tac_Toe is a game which can be played against the computer or with any other human player. Player needs to draw a squence 3 X or 0 as per the turn in rows/columns/diagonally before the opponent. Each player takes turn alternatively until game is drawn',
+    tags: ['Front End Dev', 'MVC', 2023],
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    modalTechnologies: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
-    liveUrl: 'index.html',
-    sourceUrl: 'index.html',
+    liveUrl: 'https://tictactoe-munish.netlify.app/',
+    sourceUrl: 'https://github.com/hmunish/tic-tac-toe/',
   },
 ];
 // Adding work cards function
@@ -68,6 +81,11 @@ function addWorkCards() {
       techs += `<li class="work_tech_stack">${j}</li>`;
     });
 
+    let tags = '';
+    i.tags.forEach((i) => {
+      tags += `<li class="work_tags">${i}</li>`;
+    });
+
     const workCard = `<div class="work_card">
 <div class="work_card_wrapper work_${i.id}">
   <img src="${i.img}" alt="Work ${i.id}" class="work_img" />
@@ -75,9 +93,7 @@ function addWorkCards() {
   <div class="work_card_content_wrapper">
     <h3 class="work_title">${i.title}</h3>
     <ul class="work_tags">
-      <li class="work_tags main_tag">Canopy</li>
-      <li class="work_tags">Back End Dev</li>
-      <li class="work_tags">2015</li>
+    ${tags}
     </ul>
     <p class="work_description">
       ${i.description}
@@ -108,8 +124,12 @@ function toggleMobileNav() {
 
 function addModal(obj) {
   let techStacks = '';
-  obj.modalTechnologies.forEach((i) => {
+  obj.technologies.forEach((i) => {
     techStacks += `<li class="work_tech_stack">${i}</li>`;
+  });
+  let tags = '';
+  obj.tags.forEach((i) => {
+    tags += `<li class="work_tags">${i}</li>`;
   });
   const modalHtml = `
   <div class="work_modal_wrapper">
@@ -119,9 +139,7 @@ function addModal(obj) {
                 <img src="images/close-icon.png" class="modal_close_icon" alt="Close">
               </div>
               <ul class="work_tags">
-                <li class="work_tags main_tag">Canopy</li>
-                <li class="work_tags">Back End Dev</li>
-                <li class="work_tags">2015</li>
+                ${tags}
               </ul>
             </div>
             <img src="images/work-${obj.id}.png" alt="Work ${obj.id}" class="work_img"/>
