@@ -163,7 +163,7 @@ function addModal(obj) {
                 ${tags}
               </ul>
             </div>
-            <img src="images/work-${obj.id}.png" alt="Work ${obj.id}" class="work_img"/>
+            <img src="images/project-${obj.id}.PNG" alt="Project ${obj.id}" class="work_img"/>
             <div class="work_img_wrapper work_${obj.id}" id="modal_img_wrapper"></div>
             <div class="work_modal_bottom_wrapper">
               <p class="work_description" id="modal_description">${obj.modalDescription}</p>
