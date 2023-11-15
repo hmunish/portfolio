@@ -27,22 +27,21 @@ const workData = [
     img: 'images/project-2.PNG',
     title: 'Multi Group Chat App',
     description:
-      'Created a group chat application where users can login and send and receive messages.',
+      'Chatz is a real time chatting application with features to chat with multiple contacts & groups at the same time. It supports features like real time messaging, file sharing, group chat, etc. It uses socket.io library for creating socket connections to the server, AWS S3 for uploading & sharing files.',
     modalDescription:
-      'Created a group chat application where users can login and send and receive messages.',
+      'Chatz is a real time chatting application with features to chat with multiple contacts & groups at the same time. It supports features like real time messaging, file sharing, group chat, etc. It uses socket.io library for creating socket connections to the server, AWS S3 for uploading & sharing files.',
     tags: ['Full Stack Dev', 'AWS', 2023],
     technologies: [
       'HTML & CSS',
       'JavaScript',
       'NodeJS',
       'ExpressJS',
-      'SQL',
-      'Sequelize',
+      'MongoDB',
+      'Mongoose',
       'AWS',
     ],
-    liveUrl:
-      'http://ec2-3-92-72-210.compute-1.amazonaws.com:3000/public/signup.html',
-    sourceUrl: 'https://github.com/hmunish/chat-app',
+    liveUrl: 'https://chatz-p118.onrender.com/dashboard.html',
+    sourceUrl: 'https://github.com/hmunish/chatz',
   },
   {
     id: 3,
@@ -70,27 +69,6 @@ const workData = [
     technologies: ['HTML', 'CSS', 'JavaScript'],
     liveUrl: 'https://tictactoe-munish.netlify.app/',
     sourceUrl: 'https://github.com/hmunish/tic-tac-toe/',
-  },
-
-  {
-    id: 5,
-    img: 'images/project-5.PNG',
-    title: 'Expenses Tracker',
-    description:
-      'Created an expense tracker where a user can signup and login, add and remove expenses.',
-    modalDescription:
-      'Created an expense tracker where a user can signup and login, add and remove expenses.',
-    tags: ['Full Stack Dev', 'MVC', 2023],
-    technologies: [
-      'HTML & CSS',
-      'JavaScript',
-      'NodeJS',
-      'ExpressJS',
-      'MongoDB',
-      'Mongoose',
-    ],
-    liveUrl: 'https://expenses-tracker-010w.onrender.com/public/login.html',
-    sourceUrl: 'https://github.com/hmunish/expenses-tracker',
   },
 ];
 // Adding work cards function
