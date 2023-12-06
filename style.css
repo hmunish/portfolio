@@ -23,7 +23,7 @@
   }
 
   .dp-none {
-    display: none;
+    display: none !important;
   }
 
   .blur {
@@ -440,10 +440,6 @@
     justify-content: space-around;
     flex-wrap: wrap;
     border-bottom: 1px solid #dfe1e6;
-  }
-
-  .skills_wrapper_header:nth-child(1) {
-    border-bottom: none;
   }
 
   .dropdown_wrapper {

@@ -6,6 +6,9 @@ const header = document.querySelector('.header_navbar');
 const banner = document.querySelector('.banner');
 const workSection = document.querySelector('#work_section');
 const modalWindow = document.querySelector('dialog');
+const skillBox = document.querySelector('ul.skills_wrapper');
+const skillList = document.querySelectorAll('ul.skills_list');
+const skillCloseIcon = document.querySelectorAll('img.dropdown_arrow');
 const contactForm = document.querySelector('.contact_form');
 const formErrorMsg = document.querySelector('.form_error_msg');
 const workData = [
@@ -189,6 +192,23 @@ function validateContactForm(e) {
   }
 }
 
+// Toggle skill section function
+function toggleSkillSection(e) {
+  // Validating if dropdown arrow is clicked
+  if (e.target.classList.contains('dropdown_arrow')) {
+    const skillNo = +e.target.dataset.index;
+    skillList.forEach((skill, index) => {
+      if (skillNo === index) {
+        skill.classList.toggle('dp-none');
+        skillCloseIcon[index].classList.toggle('close_icon');
+      } else {
+        skill.classList.add('dp-none');
+        skillCloseIcon[index].classList.add('close_icon');
+      }
+    });
+  }
+}
+
 // EVENT LISTENERS
 
 // Adding work cards to work section from work data array
@@ -211,4 +231,5 @@ workSection.addEventListener('click', (e) => {
     });
   }
 });
+skillBox.addEventListener('click', toggleSkillSection);
 contactForm.addEventListener('submit', validateContactForm, false);
