@@ -12,19 +12,6 @@ const workData = [
   {
     id: 1,
     img: 'images/project-1.PNG',
-    title: 'Mapty',
-    description:
-      "Mapty is an application to display workouts on the map & stores them on the browser's local storage for future reference. It's built using HTML5, CSS3, JavaScript & Leaflet library.",
-    modalDescription:
-      "Mapty is an application to display workouts on the map & stores them on the browser's local storage for future reference. It's built using HTML5, CSS3, JavaScript & Leaflet library.",
-    tags: ['Front End Dev', 'Leaflet', 2023],
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    liveUrl: 'https://munish-mapty.netlify.app/',
-    sourceUrl: 'https://github.com/hmunish/mapty',
-  },
-  {
-    id: 2,
-    img: 'images/project-2.PNG',
     title: 'Multi Group Chat App',
     description:
       'Chatz is a real time chatting application with features to chat with multiple contacts & groups at the same time. It supports features like real time messaging, file sharing, group chat, etc. It uses socket.io library for creating socket connections to the server, AWS S3 for uploading & sharing files.',
@@ -42,6 +29,20 @@ const workData = [
     liveUrl: 'https://chatz-p118.onrender.com/dashboard.html',
     sourceUrl: 'https://github.com/hmunish/chatz',
   },
+
+  {
+    id: 2,
+    img: 'images/project-2.PNG',
+    title: 'Mapty',
+    description:
+      "Mapty is an application to display workouts on the map & stores them on the browser's local storage for future reference. It's built using HTML5, CSS3, JavaScript & Leaflet library.",
+    modalDescription:
+      "Mapty is an application to display workouts on the map & stores them on the browser's local storage for future reference. It's built using HTML5, CSS3, JavaScript & Leaflet library.",
+    tags: ['Front End Dev', 'Leaflet', 2023],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'MVC', 'Leaflet'],
+    liveUrl: 'https://munish-mapty.netlify.app/',
+    sourceUrl: 'https://github.com/hmunish/mapty',
+  },
   {
     id: 3,
     img: 'images/project-3.PNG',
@@ -51,7 +52,7 @@ const workData = [
     modalDescription:
       'Forkify is a web application to search for more than 1,000,000 recipes with features to adjust ingredients according to the servings. Moreover, users can upload their custom recipes & bookmark recipes for future use.',
     tags: ['Front End Dev', 'MVC', 2023],
-    technologies: ['HTML', 'CSS', 'JavaScript'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'AJAX', 'MVC'],
     liveUrl: 'https://forkify-munish.netlify.app/',
     sourceUrl: 'https://github.com/hmunish/forkify',
   },
@@ -59,6 +60,20 @@ const workData = [
   {
     id: 4,
     img: 'images/project-4.PNG',
+    title: 'Expenzy',
+    description:
+      'Expense Tracker, crafted with React, Redux, Node, Express, and SQL, offers a streamlined mobile layout for effortless financial management. The integration of the RazorPay payment gateway ensures secure transactions.',
+    modalDescription:
+      'Expense Tracker, crafted with React, Redux, Node, Express, and SQL, offers a streamlined mobile layout for effortless financial management. The integration of the RazorPay payment gateway ensures secure transactions, providing users with a seamless experience to track expenses on the go. Simplify your finances with our intuitive mobile solution.',
+    tags: ['Full Stack Dev', 'Razorpay', 2023],
+    technologies: ['React', 'Redux', 'Node', 'Express', 'SQL'],
+    liveUrl: 'https://expenzy-app.onrender.com/',
+    sourceUrl: 'https://github.com/hmunish/expenzy',
+  },
+
+  {
+    id: 5,
+    img: 'images/project-5.PNG',
     title: 'Tic Tac Toe',
     description:
       'Tic_Tac_Toe is a game which can be played against the computer or with any other human player. Player needs to draw a squence 3 X or 0 as per the turn in rows/columns/diagonally before the opponent. Each player takes turn alternatively until game is drawn.',
