@@ -1,10 +1,10 @@
 // DOM Elements
-const main = document.querySelector('main');
 const mobileNav = document.querySelector('.mobile_nav');
 const navOpenIcon = document.querySelector('.nav_icon');
 const navCloseIcon = document.querySelector('.nav_close_icon');
 const header = document.querySelector('.header_navbar');
 const banner = document.querySelector('.banner');
+const bio = document.querySelector('p.banner_content');
 const workSection = document.querySelector('#work_section');
 const modalWindow = document.querySelector('dialog');
 const aboutSection = document.querySelector('#about_section');
@@ -91,6 +91,16 @@ const workData = [
     sourceUrl: 'https://github.com/hmunish/tic-tac-toe/',
   },
 ];
+const bioText = "I'm a Full-stack Web Developer passionate about creating clean, accessible code and enthusiastic about technology. Skilled in JavaScript and Ruby with a strong foundation in various frameworks. Swift language adaptation with a 95% collaboration success metric and strong communication skills.";
+let bioCounter = 0;
+
+// Adding bio animation
+function writeBio() {
+  if (bioCounter >= bioText.length) return;
+  bio.textContent += bioText[bioCounter];
+  bioCounter += 1;
+  setTimeout(writeBio, 30);
+}
 
 // Adding work cards function
 function addWorkCards() {
@@ -218,7 +228,10 @@ function toggleSkillSection(e) {
 // EVENT LISTENERS
 
 // Adding work cards to work section from work data array
-window.addEventListener('load', addWorkCards, false);
+window.addEventListener('DOMContentLoaded', () => {
+  writeBio();
+  addWorkCards();
+}, false);
 navOpenIcon.addEventListener('click', toggleMobileNav, false);
 navCloseIcon.addEventListener('click', toggleMobileNav, false);
 mobileNav.addEventListener('click', (e) => {

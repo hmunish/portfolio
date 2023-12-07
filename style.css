@@ -39,6 +39,7 @@
     height: 48px;
     background-color: #fff;
     position: fixed;
+    z-index: 50;
   }
 
   .navbar {
@@ -51,6 +52,7 @@
   }
 
   .logo {
+    font-family: cursive;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
@@ -133,6 +135,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+  }
+
+  #banner-dp {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url("./images/PP-min.jpg");
+    background-size: contain;
   }
 
   h1.banner_content {
@@ -140,6 +153,15 @@
     font-size: 40px;
     line-height: 52px;
     color: #172b4d;
+  }
+
+  #wave-wrapper::after {
+    content: "";
+    background-image: url("./images/Wave.svg");
+    display: inline-block;
+    margin-left: 5px;
+    width: 50px;
+    height: 50px;
   }
 
   p.banner_content {
@@ -926,12 +948,31 @@ button:hover {
 
 /* Global Styles Ends Here */
 
-.logo {
-  animation: rotate 2s infinite;
+.shake {
+  animation: shaking 1s infinite;
+}
+
+#wave-wrapper::after {
+  animation: wave 1s infinite;
 }
 
 @keyframes rotate {
   to {
     transform: rotateX(360deg);
   }
+}
+
+@keyframes shaking {
+  0% { transform: translateY(-10px); }
+  20% { transform: translateY(-5px); }
+  50% { transform: translateY(-5px); }
+  70% { transform: translateY(-5px); }
+  80% { transform: translateY(10px); }
+  90% { transform: translateY(-10px); }
+}
+
+@keyframes wave {
+  0% { transform: rotateZ(0); }
+  50% { transform: rotateZ(25deg); }
+  100% { transform: rotateZ(0); }
 }
