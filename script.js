@@ -88,8 +88,8 @@ const workData = [
     sourceUrl: 'https://github.com/hmunish/tic-tac-toe/',
   },
 ];
-// Adding work cards function
 
+// Adding work cards function
 function addWorkCards() {
   workData.forEach((i, c) => {
     let techs = '';
@@ -167,10 +167,10 @@ function addModal(obj) {
                   ${techStacks}
                 </ul>
                 <div class="work_modal_buttons_wrapper">
-                  <a href="${obj.liveUrl}" class="work_link">
+                  <a href="${obj.liveUrl}" class="work_link" target="_blank">
                     <button class="work_button work_modal_button">See live <img src="images/link-icon.svg"> </button>
                   </a>
-                  <a href="${obj.sourceUrl}" class="work_link">
+                  <a href="${obj.sourceUrl}" class="work_link" target="_blank">
                     <button class="work_button work_modal_button">See source <img src="images/github-icon.png" alt="GitHub"></button>
                   </a>
                 </div>

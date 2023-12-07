@@ -926,7 +926,7 @@ button:hover {
 /* Global Styles Ends Here */
 
 .logo {
-  animation: rotate 2s;
+  animation: rotate 2s infinite;
 }
 
 @keyframes rotate {
