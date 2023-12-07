@@ -38,6 +38,7 @@
     width: 100%;
     height: 48px;
     background-color: #fff;
+    position: fixed;
   }
 
   .navbar {
