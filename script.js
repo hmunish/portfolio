@@ -4,11 +4,14 @@ const navOpenIcon = document.querySelector('.nav_icon');
 const navCloseIcon = document.querySelector('.nav_close_icon');
 const header = document.querySelector('.header_navbar');
 const banner = document.querySelector('.banner');
+const bio = document.querySelector('p.banner_content');
 const workSection = document.querySelector('#work_section');
 const modalWindow = document.querySelector('dialog');
+const aboutSection = document.querySelector('#about_section');
 const skillBox = document.querySelector('ul.skills_wrapper');
 const skillList = document.querySelectorAll('ul.skills_list');
 const skillCloseIcon = document.querySelectorAll('img.dropdown_arrow');
+const contactSection = document.querySelector('#contact_section');
 const contactForm = document.querySelector('.contact_form');
 const formErrorMsg = document.querySelector('.form_error_msg');
 const workData = [
@@ -22,8 +25,6 @@ const workData = [
       'Chatz is a real time chatting application with features to chat with multiple contacts & groups at the same time. It supports features like real time messaging, file sharing, group chat, etc. It uses socket.io library for creating socket connections to the server, AWS S3 for uploading & sharing files.',
     tags: ['Full Stack Dev', 'AWS', 2023],
     technologies: [
-      'HTML',
-      'CSS',
       'JavaScript',
       'NodeJS',
       'ExpressJS',
@@ -88,8 +89,18 @@ const workData = [
     sourceUrl: 'https://github.com/hmunish/tic-tac-toe/',
   },
 ];
-// Adding work cards function
+const bioText = "I'm a Full-stack Web Developer passionate about creating clean, accessible code and enthusiastic about technology. Skilled in JavaScript and Ruby with a strong foundation in various frameworks. Swift language adaptation with a 95% collaboration success metric and strong communication skills.";
+let bioCounter = 0;
 
+// Adding bio animation
+function writeBio() {
+  if (bioCounter >= bioText.length) return;
+  bio.textContent += bioText[bioCounter];
+  bioCounter += 1;
+  setTimeout(writeBio, 30);
+}
+
+// Adding work cards function
 function addWorkCards() {
   workData.forEach((i, c) => {
     let techs = '';
@@ -134,6 +145,9 @@ function toggleMobileNav() {
   navOpenIcon.classList.toggle('dp-none');
   header.classList.toggle('blur');
   banner.classList.toggle('blur');
+  workSection.classList.toggle('blur');
+  aboutSection.classList.toggle('blur');
+  contactSection.classList.toggle('blur');
 }
 
 // Adding Modal Function
@@ -167,10 +181,10 @@ function addModal(obj) {
                   ${techStacks}
                 </ul>
                 <div class="work_modal_buttons_wrapper">
-                  <a href="${obj.liveUrl}" class="work_link">
+                  <a href="${obj.liveUrl}" class="work_link" target="_blank">
                     <button class="work_button work_modal_button">See live <img src="images/link-icon.svg"> </button>
                   </a>
-                  <a href="${obj.sourceUrl}" class="work_link">
+                  <a href="${obj.sourceUrl}" class="work_link" target="_blank">
                     <button class="work_button work_modal_button">See source <img src="images/github-icon.png" alt="GitHub"></button>
                   </a>
                 </div>
@@ -212,7 +226,10 @@ function toggleSkillSection(e) {
 // EVENT LISTENERS
 
 // Adding work cards to work section from work data array
-window.addEventListener('load', addWorkCards, false);
+window.addEventListener('DOMContentLoaded', () => {
+  writeBio();
+  addWorkCards();
+}, false);
 navOpenIcon.addEventListener('click', toggleMobileNav, false);
 navCloseIcon.addEventListener('click', toggleMobileNav, false);
 mobileNav.addEventListener('click', (e) => {
