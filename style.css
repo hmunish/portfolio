@@ -73,7 +73,7 @@
   .mobile_nav {
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     background: rgba(96, 112, 255, 0.9);
     mix-blend-mode: multiply;
     z-index: 5;

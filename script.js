@@ -1,4 +1,5 @@
 // DOM Elements
+const main = document.querySelector('main');
 const mobileNav = document.querySelector('.mobile_nav');
 const navOpenIcon = document.querySelector('.nav_icon');
 const navCloseIcon = document.querySelector('.nav_close_icon');
@@ -6,9 +7,11 @@ const header = document.querySelector('.header_navbar');
 const banner = document.querySelector('.banner');
 const workSection = document.querySelector('#work_section');
 const modalWindow = document.querySelector('dialog');
+const aboutSection = document.querySelector('#about_section');
 const skillBox = document.querySelector('ul.skills_wrapper');
 const skillList = document.querySelectorAll('ul.skills_list');
 const skillCloseIcon = document.querySelectorAll('img.dropdown_arrow');
+const contactSection = document.querySelector('#contact_section');
 const contactForm = document.querySelector('.contact_form');
 const formErrorMsg = document.querySelector('.form_error_msg');
 const workData = [
@@ -134,6 +137,9 @@ function toggleMobileNav() {
   navOpenIcon.classList.toggle('dp-none');
   header.classList.toggle('blur');
   banner.classList.toggle('blur');
+  workSection.classList.toggle('blur');
+  aboutSection.classList.toggle('blur');
+  contactSection.classList.toggle('blur');
 }
 
 // Adding Modal Function
