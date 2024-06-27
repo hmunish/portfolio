@@ -22,6 +22,12 @@
     scroll-behavior: smooth;
   }
 
+  main{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
   .dp-none {
     display: none !important;
   }
@@ -126,6 +132,8 @@
     justify-content: center;
     align-items: center;
     border-bottom-left-radius: 100px;
+    padding-top: 75px;
+    padding-bottom: 75px;
   }
 
   .banner_content_wrapper {
@@ -200,12 +208,12 @@
     grid-template-rows: repeat(4, 552px);
     align-content: center;
     justify-items: center;
-    gap: 114px 0;
+    gap: 250px 0;
   }
 
   .work_card {
     width: 87%;
-    min-height: 596px;
+    min-height: 700px;
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
