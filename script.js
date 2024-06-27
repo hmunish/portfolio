@@ -95,6 +95,7 @@ let bioCounter = 0;
 // Adding bio animation
 function writeBio() {
   if (bioCounter >= bioText.length) return;
+  
   bio.textContent += bioText[bioCounter];
   bioCounter += 1;
   setTimeout(writeBio, 30);
